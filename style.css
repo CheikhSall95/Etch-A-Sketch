@@ -25,11 +25,14 @@ body {
     display: flex;
     flex-wrap: wrap;
     height: 320px;
-    width: 342px;
+    width: 320px;
+    border: 10px solid rgba(24, 216, 6, 0.788);
+    border-style: inset;
+
   }
 
   #grid-container div {
-    border: 1px solid rgb(255, 0, 0);
+    /*border: 1px solid rgb(255, 0, 0);*/
     background-color: white;
   }
 
