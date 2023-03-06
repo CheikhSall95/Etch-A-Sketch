@@ -10,27 +10,25 @@
   </head>
   <body>
     <div class="header">
-        <h1  class="title">Etch A Sketch </h1>
-        <p class="description">Choose the grid and the color, then hover the mouse to paint.<br>
-            To clear the grid - just push the same or another grid button.</p>
+        <h1  class="title">Etch A Sketch </h1> <!-- Title of the game -->
+        <h5 class="description">Choose the grid and the color, then hover the mouse to paint.<br>
+            To clear the grid - just push the same or another grid button.</h5>
       </div>
-      <div class="options">
+      <div class="options"> <!-- A div that holds all options -->
         <div class="clear">
+            <button class="erase">Eraser</button>
             <button class="clearButton">Clear</button>
-        </div>
-        <div class="clear">
             <label for="colorpicker">Choose a color : </label>
             <input type="color" id="colorpicker" >
         </div>
+        
+    </div>
+      <div id="grid-container"> <!-- The container flex that will contain all divs -->
+
+      </div>
       <div class="slidecontainer">
-        <p>Grid Length: <span id="value"></span></p>
+        <p>Grid Size: <span id="value"></span></p>
         <input type="range" min="1" max="64" value="16" class="slider" id="gridRange">
       </div>
-
-    </div>
-      <div id="grid-container">
-
-      </div>
-  
   </body>
 </html>

@@ -7,7 +7,7 @@ body {
     align-items: center;
     
   }
-
+/* HEADER */
   .header{
     display: flex;
     align-items: center;
@@ -15,10 +15,18 @@ body {
     flex-direction: column;
   }
   .title {
-    font-size: 50px;
+
     text-shadow: 0 0 13px #FFF;
     margin: 0px;
   }
+  .description {
+
+   
+    margin: 10px;
+  }
+
+
+/* Options */
 
   .options {
     display: flex;
@@ -26,26 +34,10 @@ body {
   }
 
   .clear {
-    margin-top: 20px;
+    margin-top: 0px;
   }
   
-  #grid-container {
-    display: flex;
-    flex-wrap: wrap;
-    height: 320px;
-    width: 320px;
-    border: 10px solid rgba(24, 216, 6, 0.788);
-    border-style: inset;
-
-  }
-
-  #grid-container div {
-    box-sizing:border-box;
-    border: 1px solid rgb(255, 0, 0);
-    background-color: white;
-  }
-
-  .clearButton {
+  .clearButton, .erase {
     border-radius: 4px;
     background-color: #ff0000;
     border-color: #FFF;
@@ -57,3 +49,26 @@ body {
     cursor: pointer;
 
     }
+
+   .clearButton:hover, .erase:hover {
+        border-radius: 4px;
+        background-color: #ff0000c2;
+        }
+  /* Container */
+  
+  #grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 320px;
+    width: 320px;
+    border: 10px solid rgba(24, 216, 6, 0.788);
+    border-style: inset;
+    margin-top: 10px;
+  }
+
+  #grid-container div {
+    box-sizing:border-box;
+    border: 1px solid rgb(255, 0, 0);
+    background-color: white;
+  }
+
